@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello API</title>
+</head>
+<body>
+    <div>
+        <!-- terdapat tanda seperti {{.}} -->
+        <!-- 
+            anda titik . 
+            yang berada di dalam 2 tanda kurung tersebut
+            merepresentasikan data yang ingin kita tampilkan.
+        -->
+        <!-- {{.}}  -->
+
+        <!-- 
+            Format pernulisan range loop nya adalah 
+            {{range$namaVariable := .}}, 
+            yang dimana cara penulisan nama variablenya 
+            masih sama seperti biasa namun harus 
+            diawali dengan tanda dolar $.
+            
+            Lalu setelah itu kita juga perlu 
+            mengakhiri looping nya dengan keyword end 
+            yang juga perlu dimasukkan 
+            kedalam 2 tandakurung {{end}} 
+        -->
+        <ul>
+            <!-- melooping data employee nya -->
+            {{range $value := .}}
+            <li>
+                ID: {{$value.ID}}
+                Name: {{$value.Name}},
+                Age: {{$value.Age}},
+                Division: {{$value.Division}}
+            </li>
+            {{end}}
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,1 @@
+belajar sesi 2
