@@ -1,0 +1,2 @@
+// curl -X GET --user batman:secret http://localhost:9000/student
+// curl -X GET --user batman:secret http://localhost:9000/student?id=s001curl -X GET --user batman:secret http://localhost:9000/student?id=s001

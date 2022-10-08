@@ -34,3 +34,10 @@ https://github.com/jonnylangefeld/go-api/
 
 how to access swagger :
 http://localhost:8080/swagger/index.html
+
+
+practice :
+go get -u "github.com/gin-gonic/gin"
+go get -u "github.com/jinzhu/gorm"
+go get -u "github.com/jinzhu/gorm/dialects/mysql"
+go get -u "github.com/go-sql-driver/mysql"
